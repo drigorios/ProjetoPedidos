@@ -35,7 +35,7 @@
         <tbody>
             <?php
             // Conecta ao banco de dados usando PDO
-            $host = '';
+            $host = 'localhost';
             $dbname = 'pedidos';
             $username = 'root';
             $password = '';
@@ -50,7 +50,6 @@
             $stmt->execute(); 
             //Exibir os produtos na tabela
             while ($row=$stmt->fetch()) {
-                
                 echo "<tr>";
                 echo "<td>".$row['data']."</td>";
                 echo "<td>".$row['cliente']."</td>";
